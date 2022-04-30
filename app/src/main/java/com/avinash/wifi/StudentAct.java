@@ -13,6 +13,9 @@ public class StudentAct extends AppCompatActivity {
 private FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
         firebaseAuth=FirebaseAuth.getInstance();

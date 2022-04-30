@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987069344740",
+    "project_id": "wifi-attendance-1a103",
+    "storage_bucket": "wifi-attendance-1a103.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987069344740:android:c62ca6fcecc8b300bbf5f1",
+        "android_client_info": {
+          "package_name": "com.avinash.wifi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987069344740-3ds77ju73ir1gor4r86petd15fk0ftp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBghlwGmOXgY4saBsm3Zg6T8pDwHSGsTXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987069344740-3ds77ju73ir1gor4r86petd15fk0ftp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

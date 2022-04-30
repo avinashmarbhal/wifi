@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="150dp"
+        android:id="@+id/logoImage"
+        android:layout_height="130dp"
+        android:src="@drawable/wifi"
+        android:visibility="visible"
+        android:transitionName="logo_image"/>
+
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:text="PICT WIFI Attendance"
+        android:textSize="40sp"
+        android:transitionName="logo_text"
+        android:fontFamily="monospace"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login In to continue"
+        android:textSize="18sp"
+        android:transitionName="slogan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="email"
+            android:transitionName="user_tran"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            android:transitionName="password_tran"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forget Password?"
+            android:layout_gravity="right"
+            android:textColor="#000"
+            android:elevation="0dp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/or"
+            android:backgroundTint="#FFFFFF"
+            android:text="GO"
+            android:id="@+id/Go"
+            android:onClick="Login"
+            android:transitionName="button_tran"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/callSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New User? SIGN UP"
+            android:background="#00000000"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_margin="5dp"
+            android:transitionName="login_signup_tran"
+            android:onClick="SignUp"
+            android:textColor="#000"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:visibility="invisible"
+        android:id="@+id/progress"/>
+
+</LinearLayout>
